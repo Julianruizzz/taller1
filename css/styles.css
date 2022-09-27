@@ -424,7 +424,8 @@ select:focus~.barra::before {
     position: relative;
     padding: 1rem;
     animation: animarmodal;
-    animation-duration: .5s; 
+    animation-duration: .5s;
+    border-radius: 100%; 
 }
 
 @keyframes animarmodal {
