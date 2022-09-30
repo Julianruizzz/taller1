@@ -12,13 +12,14 @@
 
 body {
     background-image: url('../img/javascript.jpeg');
-    background-size: 100%;
-    height: 100%;
+    background-size: 140%;
+    height: 130%;
     width: 100%;
     display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: nowrap;
+    
 }
 
 a { 
@@ -34,12 +35,12 @@ i {
 }
 
 h3 {
-    text-align: center;
+    text-align: end;
     font-weight: 700;
     font-family: sans-serif;
     position: absolute;
     margin-bottom: 500px;
-    margin-left: 550px;
+    margin-left:50px;
     color: white;
     font-weight: 100x;
 }
@@ -55,6 +56,7 @@ form {
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     margin-top: 10%;
+    
 }
 #form{
     margin-top: -10%;
@@ -76,6 +78,7 @@ form {
     display: flex;
     flex-direction: row;
     margin: 90px;
+    color: #000;
     
 }
 
@@ -112,7 +115,6 @@ select:focus {
 }
 
 label {
-    color: var(--colorTexto);
     font-size: 16px;
     position: absolute;
     bottom: 0;
@@ -154,7 +156,7 @@ select:focus~.barra::before {
 
 .submit {
     font-family: 'Product Sans', sans-serif;
-    background: #777e20; 
+    background: #353535; 
     border-radius: 2rem;
     display: block;
     width: 40%;
@@ -167,7 +169,7 @@ select:focus~.barra::before {
     cursor: pointer;
 }
 .submit:hover{
-    background: #0059ff;  /* fallback for old browsers */
+    background: #000000;  
 }
 
 .back {
@@ -260,9 +262,13 @@ select:focus~.barra::before {
     font-size: 1.2em;
     font-weight:bolder;
     width: 110%;
-    background-color: #ffee00;
+    background-color: #555555;
     border-radius: .2rem;
     padding: .7rem;
+    margin-right: 550px;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-top: 17px;
 }
 
 .fa-square-js {
@@ -338,7 +344,7 @@ select:focus~.barra::before {
 
 .card .back {
     transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
+    background: rgb(26, 37, 44);
     padding: 15px;
     color: #f3f3f3;
     display: flex;
@@ -425,7 +431,7 @@ select:focus~.barra::before {
     padding: 1rem;
     animation: animarmodal;
     animation-duration: .5s;
-    border-radius: 100%; 
+    border-radius: 0%; 
 }
 
 @keyframes animarmodal {
@@ -448,6 +454,7 @@ select:focus~.barra::before {
 .cerrarModalCA{
     font-size: 2rem;
     float: right;
+    color:#7f7f7f;
 }
 
 .cerrarModal:hover,
@@ -479,8 +486,8 @@ select:focus~.barra::before {
 .contenidoModalC h2,
 .contenidoModalCD h2,
 .contenidoModalCA h2{
-    background-color: rgb(255, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 1rem 0;
     text-align: center;
     clear: both;

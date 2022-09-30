@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="../css/print.min.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--FONT -->
 </head>
 <body>
     <div class="frm-container">
@@ -21,30 +20,30 @@
                 <div class="title">
                       
                 
-                <h1>Formulario_validación</h1>
+                <h1>Formulario</h1>
                 </div>
                 <div class="form-group grupo" id="g-tipdoc">
                     <div class="form-group-input">
                         <select class="frm-input" id="tipdoc" name="tipdoc" ><span class="barra"></span>
-                            <option selected>Típo de documento</option>
-                            <option value="1">Cédula de ciudadania</option>
-                            <option value="2">Tarjeta de identidad</option>
-                            <option value="3">Cédula extranjera</option>
-                            <option value="4">Pasaporte</option>
+                            <option selected>Seleccione su típo de documento</option>
+                            <option value="1">CC</option>
+                            <option value="2">TI</option>
+                            <option value="3">CE</option>
+                            <option value="4">PSP</option>
                         </select>
                         <label for="tipdoc">Típo de documento</label>
                         <span class="msn-error">No eligió correctamente</span>
                     </div>
                 </div>
-                <div class="form-group grupo" id="g-numdoc"><!--Class="grupo" Para todos css-->
+                <div class="form-group grupo" id="g-numdoc">
                     <div class="form-group-input">
                         <input type="text" class="frm-input" name="numdoc" id="numdoc" ><span class="barra"></span>
                         <label for="numdoc">Número de documento</label>
                         <i class="fa-solid fa-check frm-icono"></i>
-                        <span class="msn-error">Mínimo 7 números, máximo 10 números</span>
+                        <span class="msn-error">Se requiere mínimo 7 números, máximo 10</span>
                     </div>
                 </div>
-                <div class="form-group grupo" id="g-nombre"><!--Class="grupo" Para todos css-->
+                <div class="form-group grupo" id="g-nombre">
                     <div class="form-group-input">
                         <input type="text" class="frm-input" name="nombre" id="nombre" ><span class="barra"></span>
                         <label for="nombre">Nombre</label>
@@ -52,7 +51,7 @@
                         <span class="msn-error">Solo puedes ingresar letras, máximo 40 carácteres</span>
                     </div>
                 </div>
-                <div class="form-group grupo" id="g-apellido"><!--Class="grupo" Para todos css-->
+                <div class="form-group grupo" id="g-apellido">
                     <div class="form-group-input">
                         <input type="text" class="frm-input" name="apellido" id="apellido" ><span class="barra"></span>
                         <label for="apellido">Apellido</label>
@@ -60,27 +59,26 @@
                         <span class="msn-error">Solo puedes ingresar letras, máximo 40 carácteres</span>
                     </div>
                 </div>
-                <div class="form-group grupo" id="g-telefono"><!--Class="grupo" Para todos css-->
+                <div class="form-group grupo" id="g-telefono">
                     <div class="form-group-input">
                         <input type="text" class="frm-input" name="telefono" id="telefono" ><span class="barra"></span>
                         <label for="telefono">Telefono</label>
                         <i class="fa-solid fa-check frm-icono"></i>
-                        <span class="msn-error">Mínimo 7 números, máximo 10 números</span>
+                        <span class="msn-error">Mínimo 7 números, máximo 10</span>
                     </div>
                 </div>
-                <div class="form-group grupo" id="g-nacimiento"><!--Class="grupo" Para todos css-->
+                <div class="form-group grupo" id="g-nacimiento">
                     <div class="form-group-input">
                         <input type="date" class="frm-input" id="nacimiento" name="nacimiento" ><span class="barra"></span>
-                        <!--<label for="nacimiento">Fecha de nacimiento</label>-->
-                        <div class="msn-error">Se debe seleccionar una fecha valida</div>
+                        <div class="msn-error">Seleccione una fecha valida</div>
                     </div>
                 </div>
-                <div class="form-group grupo" id="g-email"><!--Class="grupo" Para todos css-->
+                <div class="form-group grupo" id="g-email">
                     <div class="form-group-input">
                         <input type="email" class="frm-input" id="email"  name="email" ><span class="barra"></span>
                         <label for="email">Correo Electronico</label>
                         <i class="fa-solid fa-check frm-icono"></i>
-                        <span class="msn-error">Correo electrónico digitado incorrectamente</span>
+                        <span class="msn-error">Correo electrónico incorrecto</span>
                     </div>
                 </div>
                 <div class="form-group grupo" id="g-password">
@@ -88,7 +86,7 @@
                         <input type="password" name="password" id="password" class="frm-input" ><span class="barra"></span>
                         <label for="password" class="">Contraseña</label>
                         <i class="fa-solid fa-check frm-icono icono-pass"></i>
-                        <div class="msn-error">Tu password debe incluir mínimo 8 caracteres, 1 mayuscula, 1 número y 1 caracter especial</div>
+                        <div class="msn-error">Su contraseña debe tener mínimo 8 caracteres, 1 mayuscula, 1 número y 1 caracter especial</div>
                     </div>
                 </div>
                 <div class="form-group grupo" id="g-password2">
@@ -96,17 +94,17 @@
                         <input type="password" name="password2" id="password2" class="frm-input" ><span class="barra"></span>
                         <label for="password" class="">Confirmar Contraseña</label>
                         <i class="fa-solid fa-check frm-icono icono-pass"></i>
-                        <div class="msn-error">La confirmación de la Contraseña no coincide</div>
+                        <div class="msn-error">La contraseña no coincide</div>
                     </div>
                 </div>
                 <div class="form-group" id="g-terminos">
                     <div class="form-group-input">
                         <input type="checkbox" name="terminos" class="frm-checkbox" id="terminos" >
-                        <p for=""><a href="" id="abrirModal" >Aceptar términos de uso</a></p>
+                        <p for=""><a href="" id="abrirModal" >Aceptar términos y condiciones</a></p>
                     </div>
                 </div>
                 <div class="msn-error" id="msn-error">
-                    <p><i class="fa-solid fa-circle-exclamation"></i><b>Error:</b>Por favor rellenar todo el formulario</p>
+                    <p><i class="fa-solid fa-circle-exclamation"></i><b>Error:</b>Por favor llene el formulario nuevamente</p>
                 </div>
                 <button type="submit" class="btn-enviar" id="submit">Enviar</button>
                 
@@ -120,8 +118,8 @@
         <div id=""></p>
         <div id="ventanaModal" class="modal" style="padding-top: 50px; padding-bottom: 50px;left: 0;">
             <div class="contenidoModal">
-                <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
-                <h2>Terminos de uso</h2>
+                <span class="cerrarModal"><i class="fa-solid fa-arrow-left"></i></span>
+                <h3>Terminos de servicio</h3>
                 <p>Google puede modificar estas condiciones o las condiciones adicionales que se 
                     apliquen a un Servicio para, por ejemplo, reflejar cambios legislativos o en 
                     los Servicios. Te recomendamos que consultes las condiciones de forma periódica.
